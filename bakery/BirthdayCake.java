@@ -1,4 +1,4 @@
-package inheritance.bakery;
+package bakery;
 
 public class BirthdayCake extends Cake{
 
