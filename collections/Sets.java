@@ -1,13 +1,14 @@
 package collections;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 public class Sets {
 
-    @SuppressWarnings("unchecked")
+    @SuppressWarnings({ "unchecked", "rawtypes" })
     public static void main(String[] args) {
-        @SuppressWarnings("rawtypes")
+        // @SuppressWarnings("rawtypes")
         Set fruits = new HashSet();
         fruits.add("apple");
         fruits.add("banana");
@@ -15,12 +16,18 @@ public class Sets {
         // this repeat element will not be added
         fruits.add("apple");
         // our elements will not print out in the order they were added since sets are unordered
-        System.out.println(fruits);
+        // System.out.println(fruits);
 
-        System.out.println("have lemon? " + fruits.contains("lemon"));
+        // System.out.println("have lemon? " + fruits.contains("lemon"));
 
-        fruits.remove("lemon");
-        System.out.println("number of elements after making lemonade " + fruits.size());
+        // fruits.remove("lemon");
+        // System.out.println("number of elements after making lemonade " + fruits.size());
+
+
+        Iterator i = fruits.iterator();
+        while(i.hasNext()){
+            System.out.println(i.next());
+        }
 
         // @SuppressWarnings("rawtypes")
         // Set moreFruit = Set.of("orange", "pear", "cherry");
