@@ -22,11 +22,11 @@ public class Sets {
         fruits.remove("lemon");
         System.out.println("number of elements after making lemonade " + fruits.size());
 
-        @SuppressWarnings("rawtypes")
-        Set moreFruit = Set.of("orange", "pear", "cherry");
-        moreFruit.add("cranberry");
-        moreFruit.remove("pear");
-        System.out.println(moreFruit);
+        // @SuppressWarnings("rawtypes")
+        // Set moreFruit = Set.of("orange", "pear", "cherry");
+        // moreFruit.add("cranberry");
+        // moreFruit.remove("pear");
+        // System.out.println(moreFruit);
 
 
 }
